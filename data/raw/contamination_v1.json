@@ -1,0 +1,23 @@
+{
+  "purpose": "Repositories in corpus_v2 (Hugging Face) that are not re-quantizations of the anchor checkpoint. Identified 2026-10-01 from model cards during the camera-ready audit; each reason quotes or paraphrases the repo's own card.",
+  "hf_corpus_v2": {
+    "0xroyce/Plutus-Meta-Llama-3.1-8B-Instruct-bnb-4bit": "Card: fine-tuned version of LLaMA-3.1-8B for finance; labelled UNCENSORED.",
+    "QuantFactory/Llama-3.1-Korean-8B-Instruct-GGUF": "Card: quantized version of sh2orc/Llama-3.1-Korean-8B-Instruct, a Korean fine-tune.",
+    "saidutta69/Meta-Llama-3.1-8B-Instruct-heretic": "Card: decensored variant produced with Heretic (directional ablation); tags abliterated/uncensored.",
+    "saidutta69/Mistral-7B-Instruct-v0.3-heretic": "Card: decensored variant produced with Heretic (directional ablation); tags abliterated/uncensored.",
+    "saidutta69/Qwen2.5-7B-Instruct-heretic": "Card: decensored variant produced with Heretic (directional ablation); tags abliterated/uncensored.",
+    "DiTy/gemma-2-9b-it-russian-function-calling-GGUF": "Card: fine-tuned version of google/gemma-2-9b-it for Russian function calling.",
+    "DiTy/gemma-2-9b-it-function-calling-GGUF": "Card: fine-tuned version of google/gemma-2-9b-it for function calling.",
+    "QuantFactory/gemma-2-9b-it-function-calling-GGUF": "Card: quantization of DiTy/gemma-2-9b-it-function-calling (fine-tune).",
+    "INSAIT-Institute/MamayLM-Gemma-2-9B-IT-v0.1-GGUF": "Card: GGUF files for INSAIT-Institute/MamayLM-Gemma-2-9B-IT-v0.1, a Ukrainian fine-tune.",
+    "QuantFactory/BgGPT-Gemma-2-9B-IT-v1.0-GGUF": "Card: quantization of INSAIT-Institute/BgGPT-Gemma-2-9B-IT-v1.0, a Bulgarian fine-tune.",
+    "bartowski/Phi-3-mini-4k-instruct-v0.3-GGUF": "Card: quantizations of MaziyarPanahi/Phi-3-mini-4k-instruct-v0.3; HF tags finetune, dpo.",
+    "meetara-spark/meeTARA-phi-3-mini-4k-instruct-spark": "Card describes 'me2TARA - Qwen3-4B Spark': a different model family entirely."
+  },
+  "uncertain_kept": {
+    "mobilint/Llama-3.1-8B-Instruct-GGUF": "Card points to mobilint/Llama-3.1-8B-Instruct, not meta-llama; likely a re-host, unverified.",
+    "GPT4All-Community/Meta-Llama-3.1-8B-Instruct-128k-GGUF": "No traceable source link in card.",
+    "aschaler/Phi-3-mini-4k-instruct-f16-GGUF": "Empty card; no source link.",
+    "GJ-droid-dev/Mistral-7B-Instruct-v0.3-Q4_K_M-GGUF": "No source link; standard re-quant naming."
+  }
+}

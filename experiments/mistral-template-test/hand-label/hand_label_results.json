@@ -1,0 +1,224 @@
+{
+  "manifest_sha256": "71d8da79a34871d6685764afac75ed49a613bb525e9f2d14c717d1a159fe4d32",
+  "label_counts": {
+    "A": {
+      "REFUSE": 32,
+      "COMPLY": 24
+    },
+    "B": {
+      "REFUSE": 55,
+      "COMPLY": 1
+    },
+    "C": {
+      "REFUSE": 35,
+      "COMPLY": 21
+    }
+  },
+  "primary_undetermined_excluded": {
+    "rates": {
+      "A": {
+        "n": 56,
+        "refuse": 32,
+        "rate_pct": 57.1,
+        "wilson95": [
+          44.1,
+          69.2
+        ]
+      },
+      "B": {
+        "n": 56,
+        "refuse": 55,
+        "rate_pct": 98.2,
+        "wilson95": [
+          90.6,
+          99.7
+        ]
+      },
+      "C": {
+        "n": 56,
+        "refuse": 35,
+        "rate_pct": 62.5,
+        "wilson95": [
+          49.4,
+          74.0
+        ]
+      }
+    },
+    "B_vs_C": {
+      "comparison": "B vs C",
+      "pairs_used": 56,
+      "B_refuse_only": 20,
+      "C_refuse_only": 0,
+      "paired_effect_pp": 35.7,
+      "mcnemar_exact_p": 0.0,
+      "wilson_overlap": false
+    },
+    "A_vs_C": {
+      "comparison": "A vs C",
+      "pairs_used": 56,
+      "A_refuse_only": 3,
+      "C_refuse_only": 6,
+      "paired_effect_pp": -5.4,
+      "mcnemar_exact_p": 0.5078,
+      "wilson_overlap": true
+    },
+    "B_vs_A": {
+      "comparison": "B vs A",
+      "pairs_used": 56,
+      "B_refuse_only": 24,
+      "A_refuse_only": 1,
+      "paired_effect_pp": 41.1,
+      "mcnemar_exact_p": 0.0,
+      "wilson_overlap": false
+    }
+  },
+  "sensitivity_undetermined_as_refuse": {
+    "rates": {
+      "A": {
+        "n": 56,
+        "refuse": 32,
+        "rate_pct": 57.1,
+        "wilson95": [
+          44.1,
+          69.2
+        ]
+      },
+      "B": {
+        "n": 56,
+        "refuse": 55,
+        "rate_pct": 98.2,
+        "wilson95": [
+          90.6,
+          99.7
+        ]
+      },
+      "C": {
+        "n": 56,
+        "refuse": 35,
+        "rate_pct": 62.5,
+        "wilson95": [
+          49.4,
+          74.0
+        ]
+      }
+    },
+    "B_vs_C": {
+      "comparison": "B vs C",
+      "pairs_used": 56,
+      "B_refuse_only": 20,
+      "C_refuse_only": 0,
+      "paired_effect_pp": 35.7,
+      "mcnemar_exact_p": 0.0,
+      "wilson_overlap": false
+    },
+    "A_vs_C": {
+      "comparison": "A vs C",
+      "pairs_used": 56,
+      "A_refuse_only": 3,
+      "C_refuse_only": 6,
+      "paired_effect_pp": -5.4,
+      "mcnemar_exact_p": 0.5078,
+      "wilson_overlap": true
+    },
+    "B_vs_A": {
+      "comparison": "B vs A",
+      "pairs_used": 56,
+      "B_refuse_only": 24,
+      "A_refuse_only": 1,
+      "paired_effect_pp": 41.1,
+      "mcnemar_exact_p": 0.0,
+      "wilson_overlap": false
+    }
+  },
+  "sensitivity_undetermined_as_comply": {
+    "rates": {
+      "A": {
+        "n": 56,
+        "refuse": 32,
+        "rate_pct": 57.1,
+        "wilson95": [
+          44.1,
+          69.2
+        ]
+      },
+      "B": {
+        "n": 56,
+        "refuse": 55,
+        "rate_pct": 98.2,
+        "wilson95": [
+          90.6,
+          99.7
+        ]
+      },
+      "C": {
+        "n": 56,
+        "refuse": 35,
+        "rate_pct": 62.5,
+        "wilson95": [
+          49.4,
+          74.0
+        ]
+      }
+    },
+    "B_vs_C": {
+      "comparison": "B vs C",
+      "pairs_used": 56,
+      "B_refuse_only": 20,
+      "C_refuse_only": 0,
+      "paired_effect_pp": 35.7,
+      "mcnemar_exact_p": 0.0,
+      "wilson_overlap": false
+    },
+    "A_vs_C": {
+      "comparison": "A vs C",
+      "pairs_used": 56,
+      "A_refuse_only": 3,
+      "C_refuse_only": 6,
+      "paired_effect_pp": -5.4,
+      "mcnemar_exact_p": 0.5078,
+      "wilson_overlap": true
+    },
+    "B_vs_A": {
+      "comparison": "B vs A",
+      "pairs_used": 56,
+      "B_refuse_only": 24,
+      "A_refuse_only": 1,
+      "paired_effect_pp": 41.1,
+      "mcnemar_exact_p": 0.0,
+      "wilson_overlap": false
+    }
+  },
+  "decision": {
+    "outcome": "HOLDS",
+    "sensitivity_outcomes": {
+      "primary_undetermined_excluded": "HOLDS",
+      "sensitivity_undetermined_as_refuse": "HOLDS",
+      "sensitivity_undetermined_as_comply": "HOLDS"
+    },
+    "robust_to_undetermined_handling": true
+  },
+  "classifier_vs_hand": {
+    "A": {
+      "classifier_COMPLY->hand_REFUSE": 18,
+      "classifier_COMPLY->hand_COMPLY": 12,
+      "classifier_REFUSE->hand_COMPLY": 12,
+      "classifier_REFUSE->hand_REFUSE": 14
+    },
+    "B": {
+      "classifier_REFUSE->hand_REFUSE": 41,
+      "classifier_COMPLY->hand_REFUSE": 14,
+      "classifier_COMPLY->hand_COMPLY": 1
+    },
+    "C": {
+      "classifier_COMPLY->hand_REFUSE": 22,
+      "classifier_COMPLY->hand_COMPLY": 13,
+      "classifier_REFUSE->hand_REFUSE": 13,
+      "classifier_REFUSE->hand_COMPLY": 8
+    }
+  },
+  "intra_rater_vs_prior_spot_check": {
+    "n_matched": 24,
+    "agreement_pct": 70.8,
+    "cohens_kappa": 0.0
+  }
+}

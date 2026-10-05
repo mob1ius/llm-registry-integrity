@@ -1,0 +1,60 @@
+Artifact checklist
+==================
+
+Scope
+-----
+Supports the static-audit and behavioral results in Sections IV and V of the
+paper: corpus construction, divergence from the canonical template, popularity
+stratification, the repository-timestamp staleness check, the ModelScope
+check, and the behavioral pilots. The five Ollama registry entries are tracked
+separately and are not part of the primary result.
+
+Hardware
+--------
+No GPU required. The static audit is API calls and local parsing and runs on a
+laptop. The behavioral pilots need a machine that can run 7-9B GGUF models
+through Ollama. CPU-only works but a pilot takes several hours.
+
+Software
+--------
+Python 3.10+ and the packages in requirements.txt (requests, jinja2). For the
+pilots, Ollama with mistral:7b, llama3.1:8b, gemma2:9b and phi3:3.8b pulled.
+Note that phi3:3.8b is Phi-3-mini-128k-instruct.
+
+Data
+----
+data/raw/ holds the corpus, exclusion lists, canonical templates, the prompt
+set and the contamination list. data/results/ holds every static-audit output
+and the ModelScope corpus. experiments/*/ holds the templates tested and the
+pilot outputs. Nothing needs downloading except model weights.
+
+Estimated time
+--------------
+Static audit against the stored corpus_v2.json: under an hour, mostly API
+rate-limit waiting. Rebuilding the corpus: a few hours. Re-running one
+behavioral pilot on CPU: about half a day.
+
+Paper tables and the scripts behind them
+----------------------------------------
+- Table I (corpus size) and Table III (power): scripts/power_calculations.py
+- Table II and Table VIII (ModelScope): scripts/build_modelscope_corpus.py ->
+  data/results/modelscope_corpus_v1.json, modelscope_summary_v1.json
+- Table IV and Table V (prevalence, per-family intervals):
+  scripts/run_static_audit.py, scripts/canonical_divergence.py ->
+  data/results/static_audit_v2.json, canonical_divergence_v2.json
+- Table VI (popularity): scripts/stratified_breakdown.py ->
+  data/results/stratified_breakdown_v2.json
+- Staleness check (Section V-C): scripts/upstream_drift_check.py ->
+  data/results/upstream_drift_v2.json
+- Table VII (behavioral): experiments/mistral-template-test/ and
+  experiments/llama31-template-test/, run_pilot*.py and topup_to_n56.py
+- Classifier spot check (Section IV-F):
+  data/results/hand_validation_labeled_v2.json
+
+Not in the paper's tables
+-------------------------
+- experiments/mistral-template-test/hand-label/: blinded hand labels for all
+  168 Mistral outputs, the protocol, and the analysis.
+- scripts/version_history_audit.py -> data/results/version_history_audit_v1.json:
+  each audited template compared against the developer's own commit history,
+  with and without the entries in data/raw/contamination_v1.json.

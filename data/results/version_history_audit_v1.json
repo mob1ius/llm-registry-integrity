@@ -1,0 +1,512 @@
+{
+  "generated": "2026-10-01",
+  "developer_history": {
+    "Mistral-7B-Instruct-v0.3": {
+      "n_commits": 34,
+      "versions": {
+        "26a59556925c987317ce5291811ba3b7f32ec4c647c400c6cc7e3a9993007ba7": {
+          "first_seen": "2024-05-22",
+          "commit": "bb73aaeea236d1bbe51e1f0d8acd2b96bb7793b3",
+          "title": "Upload tokenizer (#6)"
+        },
+        "673ba868dceeb3c871f384131142c4a9adb1bb52a5e6383a7f1fa4cc724c2904": {
+          "first_seen": "2024-06-20",
+          "commit": "b85b5dd49773d14b12c9d8666044cb83df4e4086",
+          "title": "Updating chat template, trying to make it match with `mistral_common` (#44)"
+        },
+        "6b1fd7807826615a3befd86aa0a9fbfce6a98acb0f4dd66726be76b078011156": {
+          "first_seen": "2024-07-17",
+          "commit": "43ee8f4afb6fc9e4304a8ed87aaa3a36a0e06939",
+          "title": "Align tokenizer with mistral-common (#51)"
+        },
+        "4b99ef822f3d62b1e3e397de7c6c95e8301160a8fd39c6cbdc8ca3ccbd999b1a": {
+          "first_seen": "2024-08-02",
+          "commit": "b0693ea4ce84f1a6a70ee5ac7c8efb0df82875f6",
+          "title": "Add tool calling support to chat template (#68)"
+        },
+        "6915a233b68427506bfa4b5831b50ccc017b5fe7b30260740a069352298ff597": {
+          "first_seen": "2024-08-14",
+          "commit": "b8ef225287903940a8fcc1f6e1016b29c5cc01f3",
+          "title": "Fix chat template when tool_calls is defined but None (#70)"
+        },
+        "e16746b40344d6c5b5265988e0328a0bf7277be86f1c335156eae07e29c82826": {
+          "first_seen": "2024-08-20",
+          "commit": "f67d0f47df7707eddf3fb61000e3e8713074f45c",
+          "title": "Clean up tool use snippet (#76)"
+        }
+      }
+    },
+    "Qwen2.5-7B-Instruct": {
+      "n_commits": 13,
+      "versions": {
+        "89d726e7795b101935db5c909c75a7d403a47deedad53a64947e9b079ba94def": {
+          "first_seen": "2024-09-16",
+          "commit": "d1e200fcf95ef0d4326873ddf63e5562d5f1fdbb",
+          "title": "Upload folder using huggingface_hub"
+        },
+        "d5495a1e5db0611132a97e46a65dbb64a642a499421228b9c8b93229097fa9a4": {
+          "first_seen": "2024-09-18",
+          "commit": "929d90a7473be218ae132181708d94dbf08a0420",
+          "title": "Update tokenizer_config.json"
+        },
+        "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f": {
+          "first_seen": "2024-09-19",
+          "commit": "acbd96531cda22292a3ceaa67e984955d3965282",
+          "title": "Upload ./tokenizer_config.json with huggingface_hub"
+        }
+      }
+    },
+    "Phi-3-mini-4k-instruct": {
+      "n_commits": 25,
+      "versions": {
+        "68e5b97472ceec7523b68d3678958db46f568999a43221ae354a6ba0bcf0a611": {
+          "first_seen": "2024-04-22",
+          "commit": "65be4e00a56c16d036e9cbe96b0b35f8aa0f84b0",
+          "title": "chore(root): Initial files upload."
+        },
+        "268b6082ceb7176dc6ed80557a2f7837f9f0339592fbee677d405a553af15f88": {
+          "first_seen": "2024-04-29",
+          "commit": "300945e90b6f55d3cb88261c8e5333fae696f672",
+          "title": "fix(root): Replaces system by user to improve generation experience."
+        },
+        "dcaee66df77bfbb789ec541fe713218da30225a526f1db97138fc39ee6dc56aa": {
+          "first_seen": "2024-07-01",
+          "commit": "4f818b18e097c9ae8f93a29a57027cad54b75304",
+          "title": "Update model (#77)"
+        }
+      }
+    }
+  },
+  "hf_as_published": {
+    "per_anchor": {
+      "Mistral-7B-Instruct-v0.3": {
+        "basis": "canonical",
+        "n": 35,
+        "divergent": 18,
+        "pct": 51.4,
+        "wilson95": [
+          35.6,
+          67.0
+        ],
+        "divergent_by_history": {
+          "DEV-PRIOR 2024-05-22": 11,
+          "DEV-PRIOR 2024-06-20": 3,
+          "NOT-IN-HISTORY": 1,
+          "DEV-PRIOR 2024-07-17": 1,
+          "DEV-PRIOR 2024-08-02": 2
+        },
+        "divergent_repos": [
+          "CISCai/Mistral-7B-Instruct-v0.3-SOTA-GGUF",
+          "ElMater06/Mistral-7B-Instruct-v0.3-IQ4_NL-GGUF",
+          "MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF",
+          "QuantFactory/Mistral-7B-Instruct-v0.3-GGUF",
+          "SanctumAI/Mistral-7B-Instruct-v0.3-GGUF",
+          "apoorvparmar007/Mistral-7B-Instruct-v0.3-Q2_K-GGUF",
+          "doctorpcgum/Mistral-7B-Instruct-v0.3-GGUF",
+          "jfer1015/Mistral-7B-Instruct-v0.3-Q4_K_M-GGUF",
+          "joshloecker/Mistral-7B-Instruct-v0.3-Q2_K-GGUF",
+          "joshloecker/Mistral-7B-Instruct-v0.3-Q6_K-GGUF",
+          "legraphista/Mistral-7B-Instruct-v0.3-IMat-GGUF",
+          "lmstudio-community/Mistral-7B-Instruct-v0.3-GGUF",
+          "mradermacher/Mistral-7B-Instruct-v0.3-GGUF",
+          "mradermacher/Mistral-7B-Instruct-v0.3-i1-GGUF",
+          "qnixsynapse/Mistral-7B-Instruct-v0.3-Q4_K_M-GGUF",
+          "reach-vb/Mistral-7B-Instruct-v0.3-Q6_K-GGUF",
+          "second-state/Mistral-7B-Instruct-v0.3-GGUF",
+          "sourav285/Mistral-7B-Instruct-v0.3-GGUF"
+        ],
+        "high_pop": [
+          11,
+          15
+        ],
+        "long_tail": [
+          7,
+          20
+        ],
+        "popularity_fisher_p": 0.041
+      },
+      "Qwen2.5-7B-Instruct": {
+        "basis": "canonical",
+        "n": 17,
+        "divergent": 4,
+        "pct": 23.5,
+        "wilson95": [
+          9.6,
+          47.3
+        ],
+        "divergent_by_history": {
+          "DEV-PRIOR 2024-09-18": 4
+        },
+        "divergent_repos": [
+          "MaziyarPanahi/Qwen2.5-7B-Instruct-GGUF",
+          "Qwen/Qwen2.5-7B-Instruct-GGUF",
+          "paultimothymooney/Qwen2.5-7B-Instruct-Q4_K_M-GGUF",
+          "second-state/Qwen2.5-7B-Instruct-GGUF"
+        ],
+        "high_pop": [
+          4,
+          15
+        ],
+        "long_tail": [
+          0,
+          2
+        ],
+        "popularity_fisher_p": 1.0
+      },
+      "Phi-3-mini-4k-instruct": {
+        "basis": "canonical",
+        "n": 35,
+        "divergent": 8,
+        "pct": 22.9,
+        "wilson95": [
+          12.1,
+          39.0
+        ],
+        "divergent_by_history": {
+          "DEV-PRIOR 2024-04-29": 6,
+          "NOT-IN-HISTORY": 2
+        },
+        "divergent_repos": [
+          "Akshay1996/Phi-3-mini-4k-instruct-Q4_K_M-GGUF",
+          "backyardai/Phi-3-mini-4k-instruct-GGUF",
+          "bartowski/Phi-3-mini-4k-instruct-v0.3-GGUF",
+          "kaushiksiva07/Phi-3-mini-4k-instruct-Q4_K_M-GGUF",
+          "legraphista/Phi-3-mini-4k-instruct-IMat-GGUF",
+          "meetara-spark/meeTARA-phi-3-mini-4k-instruct-spark",
+          "mrmage/Phi-3-mini-4k-instruct-Q4_K_S-GGUF",
+          "qwp4w3hyb/Phi-3-mini-4k-instruct-iMat-GGUF"
+        ],
+        "high_pop": [
+          4,
+          15
+        ],
+        "long_tail": [
+          4,
+          20
+        ],
+        "popularity_fisher_p": 0.7
+      },
+      "Llama-3.1-8B-Instruct": {
+        "basis": "modal (gated, unverified)",
+        "n": 29,
+        "divergent": 13,
+        "pct": 44.8,
+        "wilson95": [
+          28.4,
+          62.5
+        ],
+        "divergent_by_history": null,
+        "divergent_repos": [
+          "0xroyce/Plutus-Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+          "QuantFactory/Llama-3.1-Korean-8B-Instruct-GGUF",
+          "bartowski/Meta-Llama-3.1-8B-Instruct-GGUF",
+          "byteshape/Llama-3.1-8B-Instruct-GGUF",
+          "featherless-ai-quants/meta-llama-Llama-3.1-8B-Instruct-GGUF",
+          "gaianet/Meta-Llama-3.1-8B-Instruct-GGUF",
+          "lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF",
+          "matrixportalx/Llama-3.1-8B-Instruct-GGUF",
+          "matrixportalx/Llama-3.1-8B-Instruct-Q4_K_M-GGUF",
+          "mobilint/Llama-3.1-8B-Instruct-GGUF",
+          "saidutta69/Meta-Llama-3.1-8B-Instruct-heretic",
+          "stratalab-org/Meta-Llama-3.1-8B-Instruct-GGUF",
+          "unsloth/Llama-3.1-8B-Instruct-GGUF"
+        ],
+        "high_pop": [
+          5,
+          15
+        ],
+        "long_tail": [
+          8,
+          14
+        ],
+        "popularity_fisher_p": 0.272
+      },
+      "gemma-2-9b-it": {
+        "basis": "modal (gated, unverified)",
+        "n": 27,
+        "divergent": 3,
+        "pct": 11.1,
+        "wilson95": [
+          3.9,
+          28.1
+        ],
+        "divergent_by_history": null,
+        "divergent_repos": [
+          "DiTy/gemma-2-9b-it-function-calling-GGUF",
+          "DiTy/gemma-2-9b-it-russian-function-calling-GGUF",
+          "QuantFactory/gemma-2-9b-it-function-calling-GGUF"
+        ],
+        "high_pop": [
+          2,
+          15
+        ],
+        "long_tail": [
+          1,
+          12
+        ],
+        "popularity_fisher_p": 1.0
+      }
+    },
+    "pooled_canonical": {
+      "divergent": 30,
+      "n": 87,
+      "pct": 34.5,
+      "wilson95": [
+        25.3,
+        44.9
+      ],
+      "dev_prior": 27,
+      "dev_prior_pct": 31.0,
+      "not_in_history": 3
+    },
+    "popularity": {
+      "pooled_mixed_basis": {
+        "high_popularity": [
+          26,
+          75
+        ],
+        "long_tail": [
+          20,
+          68
+        ]
+      }
+    }
+  },
+  "hf_contamination_removed": {
+    "per_anchor": {
+      "Mistral-7B-Instruct-v0.3": {
+        "basis": "canonical",
+        "n": 34,
+        "divergent": 18,
+        "pct": 52.9,
+        "wilson95": [
+          36.7,
+          68.5
+        ],
+        "divergent_by_history": {
+          "DEV-PRIOR 2024-05-22": 11,
+          "DEV-PRIOR 2024-06-20": 3,
+          "NOT-IN-HISTORY": 1,
+          "DEV-PRIOR 2024-07-17": 1,
+          "DEV-PRIOR 2024-08-02": 2
+        },
+        "divergent_repos": [
+          "CISCai/Mistral-7B-Instruct-v0.3-SOTA-GGUF",
+          "ElMater06/Mistral-7B-Instruct-v0.3-IQ4_NL-GGUF",
+          "MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF",
+          "QuantFactory/Mistral-7B-Instruct-v0.3-GGUF",
+          "SanctumAI/Mistral-7B-Instruct-v0.3-GGUF",
+          "apoorvparmar007/Mistral-7B-Instruct-v0.3-Q2_K-GGUF",
+          "doctorpcgum/Mistral-7B-Instruct-v0.3-GGUF",
+          "jfer1015/Mistral-7B-Instruct-v0.3-Q4_K_M-GGUF",
+          "joshloecker/Mistral-7B-Instruct-v0.3-Q2_K-GGUF",
+          "joshloecker/Mistral-7B-Instruct-v0.3-Q6_K-GGUF",
+          "legraphista/Mistral-7B-Instruct-v0.3-IMat-GGUF",
+          "lmstudio-community/Mistral-7B-Instruct-v0.3-GGUF",
+          "mradermacher/Mistral-7B-Instruct-v0.3-GGUF",
+          "mradermacher/Mistral-7B-Instruct-v0.3-i1-GGUF",
+          "qnixsynapse/Mistral-7B-Instruct-v0.3-Q4_K_M-GGUF",
+          "reach-vb/Mistral-7B-Instruct-v0.3-Q6_K-GGUF",
+          "second-state/Mistral-7B-Instruct-v0.3-GGUF",
+          "sourav285/Mistral-7B-Instruct-v0.3-GGUF"
+        ],
+        "high_pop": [
+          11,
+          14
+        ],
+        "long_tail": [
+          7,
+          20
+        ],
+        "popularity_fisher_p": 0.017
+      },
+      "Qwen2.5-7B-Instruct": {
+        "basis": "canonical",
+        "n": 16,
+        "divergent": 4,
+        "pct": 25.0,
+        "wilson95": [
+          10.2,
+          49.5
+        ],
+        "divergent_by_history": {
+          "DEV-PRIOR 2024-09-18": 4
+        },
+        "divergent_repos": [
+          "MaziyarPanahi/Qwen2.5-7B-Instruct-GGUF",
+          "Qwen/Qwen2.5-7B-Instruct-GGUF",
+          "paultimothymooney/Qwen2.5-7B-Instruct-Q4_K_M-GGUF",
+          "second-state/Qwen2.5-7B-Instruct-GGUF"
+        ],
+        "high_pop": [
+          4,
+          14
+        ],
+        "long_tail": [
+          0,
+          2
+        ],
+        "popularity_fisher_p": 1.0
+      },
+      "Phi-3-mini-4k-instruct": {
+        "basis": "canonical",
+        "n": 33,
+        "divergent": 6,
+        "pct": 18.2,
+        "wilson95": [
+          8.6,
+          34.4
+        ],
+        "divergent_by_history": {
+          "DEV-PRIOR 2024-04-29": 6
+        },
+        "divergent_repos": [
+          "Akshay1996/Phi-3-mini-4k-instruct-Q4_K_M-GGUF",
+          "backyardai/Phi-3-mini-4k-instruct-GGUF",
+          "kaushiksiva07/Phi-3-mini-4k-instruct-Q4_K_M-GGUF",
+          "legraphista/Phi-3-mini-4k-instruct-IMat-GGUF",
+          "mrmage/Phi-3-mini-4k-instruct-Q4_K_S-GGUF",
+          "qwp4w3hyb/Phi-3-mini-4k-instruct-iMat-GGUF"
+        ],
+        "high_pop": [
+          3,
+          14
+        ],
+        "long_tail": [
+          3,
+          19
+        ],
+        "popularity_fisher_p": 1.0
+      },
+      "Llama-3.1-8B-Instruct": {
+        "basis": "modal (gated, unverified)",
+        "n": 26,
+        "divergent": 10,
+        "pct": 38.5,
+        "wilson95": [
+          22.4,
+          57.5
+        ],
+        "divergent_by_history": null,
+        "divergent_repos": [
+          "bartowski/Meta-Llama-3.1-8B-Instruct-GGUF",
+          "byteshape/Llama-3.1-8B-Instruct-GGUF",
+          "featherless-ai-quants/meta-llama-Llama-3.1-8B-Instruct-GGUF",
+          "gaianet/Meta-Llama-3.1-8B-Instruct-GGUF",
+          "lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF",
+          "matrixportalx/Llama-3.1-8B-Instruct-GGUF",
+          "matrixportalx/Llama-3.1-8B-Instruct-Q4_K_M-GGUF",
+          "mobilint/Llama-3.1-8B-Instruct-GGUF",
+          "stratalab-org/Meta-Llama-3.1-8B-Instruct-GGUF",
+          "unsloth/Llama-3.1-8B-Instruct-GGUF"
+        ],
+        "high_pop": [
+          4,
+          14
+        ],
+        "long_tail": [
+          6,
+          12
+        ],
+        "popularity_fisher_p": 0.422
+      },
+      "gemma-2-9b-it": {
+        "basis": "modal (gated, unverified)",
+        "n": 22,
+        "divergent": 0,
+        "pct": 0.0,
+        "wilson95": [
+          0.0,
+          14.9
+        ],
+        "divergent_by_history": null,
+        "divergent_repos": [],
+        "high_pop": [
+          0,
+          12
+        ],
+        "long_tail": [
+          0,
+          10
+        ],
+        "popularity_fisher_p": 1.0
+      }
+    },
+    "pooled_canonical": {
+      "divergent": 28,
+      "n": 83,
+      "pct": 33.7,
+      "wilson95": [
+        24.5,
+        44.4
+      ],
+      "dev_prior": 27,
+      "dev_prior_pct": 32.5,
+      "not_in_history": 1
+    },
+    "popularity": {
+      "pooled_mixed_basis": {
+        "high_popularity": [
+          22,
+          68
+        ],
+        "long_tail": [
+          16,
+          63
+        ]
+      }
+    }
+  },
+  "contamination_excluded": [
+    "0xroyce/Plutus-Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "DiTy/gemma-2-9b-it-function-calling-GGUF",
+    "DiTy/gemma-2-9b-it-russian-function-calling-GGUF",
+    "INSAIT-Institute/MamayLM-Gemma-2-9B-IT-v0.1-GGUF",
+    "QuantFactory/BgGPT-Gemma-2-9B-IT-v1.0-GGUF",
+    "QuantFactory/Llama-3.1-Korean-8B-Instruct-GGUF",
+    "QuantFactory/gemma-2-9b-it-function-calling-GGUF",
+    "bartowski/Phi-3-mini-4k-instruct-v0.3-GGUF",
+    "meetara-spark/meeTARA-phi-3-mini-4k-instruct-spark",
+    "saidutta69/Meta-Llama-3.1-8B-Instruct-heretic",
+    "saidutta69/Mistral-7B-Instruct-v0.3-heretic",
+    "saidutta69/Qwen2.5-7B-Instruct-heretic"
+  ],
+  "modelscope": {
+    "Mistral-7B-Instruct-v0.3": {
+      "n": 14,
+      "by_history": {
+        "DEV-PRIOR 2024-05-22": 8,
+        "NOT-IN-HISTORY": 1,
+        "CURRENT": 4,
+        "DEV-PRIOR 2024-08-14": 1
+      },
+      "not_in_history_repos": [
+        "rubraAI/Mistral-7B-Instruct-v0.3-GGUF"
+      ]
+    },
+    "Qwen2.5-7B-Instruct": {
+      "n": 18,
+      "by_history": {
+        "DEV-PRIOR 2024-09-18": 8,
+        "CURRENT": 10
+      },
+      "not_in_history_repos": []
+    },
+    "Phi-3-mini-4k-instruct": {
+      "n": 16,
+      "by_history": {
+        "DEV-PRIOR 2024-04-29": 4,
+        "DEV-PRIOR 2024-04-22": 2,
+        "CURRENT": 5,
+        "NOT-IN-HISTORY": 5
+      },
+      "not_in_history_repos": [
+        "QuantFactory/Phi-3-mini-4k-instruct-GGUF",
+        "QuantFactory/Phi-3-mini-4k-instruct-Matter-0.1-Slim-A-GGUF",
+        "bartowski/Phi-3-mini-4k-instruct-GGUF",
+        "bartowski/Phi-3-mini-4k-instruct-old-GGUF",
+        "bartowski/Phi-3-mini-4k-instruct-v0.3-GGUF"
+      ]
+    }
+  }
+}
